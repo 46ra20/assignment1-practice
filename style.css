@@ -11,7 +11,7 @@ header{
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
-  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
 
 }
 header h1{
@@ -40,14 +40,15 @@ header p{
   padding: 10px 20px;
   border-radius: 8px;
 }
-nav h1{
+nav h1, .ourPlan h1{
+  position: sticky;
   margin: 0 auto;
   padding: 100px 0 20px 0;
   text-align: center;
   font-size: 45px;
   font-weight: blod;
 }
-nav p{
+nav p, .ourPlan p{
   text-align: center;
   width: 50%;
   margin: 0 auto;
@@ -57,27 +58,24 @@ nav ul{
   margin: 30px auto;
 }
 nav ul li{
-  margin: 0 auto;
-  padding: 0;
+  margin: 7px 17px;
+  padding: 40px 0px;
   list-style: none;
   display: inline-block;
-  width: calc(100%/5.2);
+  width: calc(100%/7);
+  background-color: lightgray;
+  text-align: center;
+  border-radius: 10px;
 }
 nav ul li a{
   text-decoration: none;
   font-size: 25px;
   font-weight: bold;
-  color: white;
-  text-align: center;
-  margin: 10px 4px;
-  padding: 4vh 1.7vw;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
-  border: 1px solid lightgray;
+  color: rgba(0,0,0,0.6);
 }
-nav ul li a:hover{
-  background-color: rgba(255, 0, 0, 0.2);
-  border: 1px solid darkorange;
+nav ul li:hover{
+  background-color: rgba(205, 0, 0, 0.2);
+  color: orange;
   box-shadow: inset 0 0 0px 2000px rgba(250, 50, 10, 0.4);
 }
 nav form{
@@ -93,4 +91,55 @@ nav form p input{
 nav form p input:focus{
   outline: none;
   border-style: none;
+}
+.allPlan{
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+}
+.common{
+  margin: 30px auto;
+  padding: 20px 15px;
+  width: calc(100% / 4);
+  border-radius: 10px;
+}
+.common img{
+  height: 53px;
+  width: 53px;
+}
+.common h2{
+  text-align: left;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+.common p{
+  margin: 0;
+  padding: 0px;
+  text-align: left;
+  font-size: 16px;
+}
+.forFood{
+  background-color: #add8e652;
+}
+.forShalter{
+  background-color: #ffc0cb80;
+}
+.forEducation{
+  background: #ffa50069;
+}
+.helpPeople{
+  margin: 40px auto;
+  display: flex;
+  width: 80%;
+}
+.discription{
+  width: 40%;
+  margin: 40px 0px 40px 29px;
+  margin-right: 8%;
+}
+.helpPeople img{
+  width: 46.2%;
+  border-radius: 10px;
+  float: right;
 }
